@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Git - всему голова!</title>
-      <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <!--Card-->
-      <div class="card">
-         <p class="subtitle">Git</p>
-          <ul>
-            <li>ls - расшифровывается как "List files in the directory", что переводится как "перечислить все файлы в папке" или "вывести на экран список файлов в папке".</li>
-            <li>cd - расшифровывается как "Change directory", что переводится как "сменить папку" или "перейти в другую папку".</li>
-            <li>pwd - расшифровывается как "Present working directory", что переводится как "текущая рабочая директория". То есть команда pwd показывает, в какой сейчас папке мы находимся. </li>
-            <li>mkdir - расшифровывается как "Make directory", что переводится как "создать папку".</li>
-            <li>mv — расшифровывается как "move", что переводится как "переместить". С помощью неё можно переместить или переименовать файл/папку.</li>
-         </ul>
-      </div>
-      <!--footer-->
-      <footer class="animated fadeIn">
-         <p class="location" align="center">
-            <a href="../index.html">Вернутся на главную</a>
-         </p>
-         &copy; 2024. SkyPro
-      </footer>
-   </body>
+<html lang="ru">
+<head>
+  <title>Git - всему голова!</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+  <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!--Card-->
+  <div class="card">
+    <p class="subtitle">Git</p>
+    <ul>
+      <li><code>git init</code> — создаёт Git-репозиторий в текущей папке (инициализация).</li>
+      <li><code>git clone &lt;URL&gt;</code> — скачивает удалённый репозиторий к себе на компьютер.</li>
+      <li><code>git status</code> — показывает состояние рабочей директории и staging area: какие файлы изменены, добавлены и т.д.</li>
+      <li><code>git add &lt;file&gt;</code> — добавляет указанный файл(ы) в индекс (подготовка к коммиту).</li>
+      <li><code>git add .</code> — добавляет все изменения в текущей директории в индекс.</li>
+      <li><code>git commit -m "Сообщение"</code> — фиксирует изменения как новый коммит с описанием.</li>
+      <li><code>git log</code> — показывает историю коммитов. Добавьте <code>--oneline</code> для компактного вида.</li>
+      <li><code>git branch</code> — список веток. <code>git branch new-branch</code> — создать новую ветку.</li>
+      <li><code>git checkout &lt;branch&gt;</code> — переключиться на указанную ветку.</li>
+      <li><code>git switch &lt;branch&gt;</code> — современная альтернатива <code>checkout</code> (Git ≥2.23).</li>
+      <li><code>git merge &lt;branch&gt;</code> — объединяет указанную ветку с текущей.</li>
+      <li><code>git push origin &lt;branch&gt;</code> — отправляет локальные коммиты в удалённую ветку.</li>
+      <li><code>git pull</code> — скачивает и объединяет изменения из удалённого репозитория (<code>git fetch</code> + <code>git merge</code>).</li>
+      <li><code>git remote add origin &lt;URL&gt;</code> — подключает удалённый репозиторий под именем <code>origin</code>.</li>
+      <li><code>git stash</code> — временно сохраняет незакоммиченные изменения, чтобы можно было переключиться на другую ветку.</li>
+    </ul>
+  </div>
+
+  <!--footer -->
+  <footer class="animated fadeIn">
+    <p class="location" align="center">
+      <a href="../index.html">Вернуться на главную</a>
+    </p>
+    &copy; 2024. SkyPro
+  </footer>
+</body>
 </html>
